@@ -29,6 +29,9 @@ h1 {
     font-size: 50px;
     font-weight: 600;
     color: #192b59;
+    line-height: 58px;
+    letter-spacing: -2px;
+    /* padding-right: 233px; */
 }
 
 .title-h2 span {
@@ -47,7 +50,7 @@ h1 {
     font-weight: 600;
     color: #192b59;
     line-height: 56.2px;
-    margin-bottom: 31px;
+    margin-bottom: 32px;
 }
 
 .title-40 span {
@@ -64,15 +67,12 @@ h1 {
 }
 
 .page-stat .title-h2,
-.page-screen .title-h2 {
+.page-screen .title-h2
+.page-control .title-h2 {
     text-align: center;
     line-height: 1.2;
     letter-spacing: -1.3px;
     margin: 0 auto;
-}
-
-.page-stat .title-h2 {
-    max-width: 500px;
 }
 
 .settings-icon {
@@ -135,6 +135,7 @@ h1 {
     background-image: url(../img/header-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     padding: 55px 0 330px 0;
     position: relative;
 }
@@ -176,7 +177,7 @@ h1 {
 /*======================= PAGE PLAN/SCREEN =========================*/
 .page-plan,
 .page-screen {
-    padding: 109px 0 156px 0;
+    padding: 75px 0 156px 0;
 }
 
 .page-plan,
@@ -185,7 +186,9 @@ h1 {
 }
 
 .page-screen {
-    padding: 116px 0 0 0;
+    padding-top: 57px;
+    padding-bottom: 0;
+    /* padding: 53px 0 0 0; */
 }
 
 .screen-img {
@@ -328,7 +331,7 @@ h1 {
 
 .grid-item {
     text-align: center;
-    box-shadow: 0 0 5px #f4f4f4;
+    box-shadow: 0 9px 20px #f4f4f4;
     padding: 0px 37px;
 }
 
@@ -413,7 +416,7 @@ h1 {
     margin-top: 12px;
     margin-bottom: 26px;
     margin: 12px 0 26px 0;
-    line-height: 58px;
+    line-height: 59px;
     overflow: hidden;
 }
 
@@ -558,13 +561,17 @@ h1 {
 }
 
 /*================== PAGE STAT ==============*/
+.page-stat {
+    padding: 116px 0 96px 0;
+}
+
 .page-stat,
 .page-screen {
     background-color: #edf6ff;
 }
 
-.page-stat {
-    padding: 116px 0 96px 0;
+.page-stat .title-h2 {
+    max-width: 500px;
 }
 
 .list-stat {
@@ -649,13 +656,14 @@ h1 {
     letter-spacing: -1px;
 }
 
-/*================== PAGE APP ==============*/
+/*================== PAGE CONTROL ==============*/
 .page-app {
     padding: 69px 0 20px 0;
 }
 
 .page-app .wrap {
     position: relative;
+    padding-bottom: 46px;
 }
 
 .page-app-text {
@@ -715,7 +723,8 @@ a.video-app {
     background-image: url(../img/bg-analytics.png);
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 117px 0 137px 0;
+    padding: 117px 0 133px 268px;
+    /* background-position: 33px 26px; */
 }
 
 .flex-analytics {
@@ -726,8 +735,121 @@ a.video-app {
 
 .flex-analytics>div {
     flex-basis: 58%;
+    padding-left: 53px;
 }
 
 .page-analytics-text {
-    margin-bottom: 54px;
+    margin-bottom: 27px;
+}
+
+/*================== PAGE CONTROL ==============*/
+.page-control {
+    background-image: url(../img/bg-control.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-position: -346px -96px;
+    padding: 115px 0 141px 0;
+}
+
+.flex-control {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-size: cover;
+}
+
+.box-control {
+    /* padding-left: 10px; */
+}
+
+.box-control .btn-primary {
+    padding: 21px 62px;
+}
+
+.box-control .title-h2 {
+    margin-top: 15px;
+    margin-bottom: 29px;
+    padding-right: 233px;
+}
+
+.box-control p {
+    padding-right: 40px;
+    margin-bottom: 50px;
+}
+
+/*======================= PAGE CLIENTS =========================*/
+.page-clients {
+    position: relative;
+    margin-top: 120px;
+    padding: 43px 0 0 0;
+}
+
+.page-clients::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/vector.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
+}
+
+.page-clients .title-40 {
+    color: #fff;
+}
+
+.page-clients .title-40 span {
+    color: #85c8ff;
+}
+
+.box-clients {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-clients-item {
+    background-color: #fff;
+    padding: 21px 42px;
+    border-radius: 10px;
+    box-shadow: 0 9px 20px #f4f4f4;
+    flex-basis: 31.5%;
+    box-sizing: border-box;
+    font-size: 14px;
+    /* margin-top: 63px; */
+}
+
+.box-clients-item>p {
+    margin-bottom: 4px;
+}
+
+.box-clients-item .name {
+    font-size: 22px;
+    font-weight: 600;
+    color: #000958;
+    margin-bottom: 0;
+    letter-spacing: -0.6px;
+    line-height: 1.1;
+}
+
+.box-clients-item .position {
+    font-size: 14px;
+    font-weight: 700;
+    color: #1085e4;
+    text-transform: uppercase;
+    margin-top: 0;
+    letter-spacing: 3px;
+}
+
+.box-info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; /*Чтобы изображения стало бы коректным*/
+}
+
+.box-info>div {
+    padding-left: 17px;
 }
